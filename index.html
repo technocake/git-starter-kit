@@ -31,7 +31,7 @@
 
 				<section>
 					<h2>100% basic terminal</h2>
-					<pre><code data-trim contenteditable>
+					<pre><code data-trim class="bash" contenteditable>
 						cd # bytter mappe i terminalen
 						ls # lister filer i en mappe
 
@@ -44,7 +44,7 @@
 				<section>
 					<h4>versjonskontroll: PÅ</h4>
 					<section>
-						<pre><code data-trim contenteditable>
+						<pre><code data-trim class="bash" contenteditable>
 							git init 
 						</code></pre>
 
@@ -56,7 +56,7 @@
 
 
 					<section>
-						<pre><code data-trim contenteditable>
+						<pre><code data-trim class="bash" contenteditable>
 							git init mappe
 						</code></pre>
 					</section>
@@ -69,7 +69,7 @@
 				<section>
 					<h4>Git, hva er status-quo?</h4>
 					<section>
-						<pre><code data-trim contenteditable>
+						<pre><code data-trim class="bash" contenteditable>
 							git status
 						</code></pre>
 
@@ -82,22 +82,201 @@
 
 
 					<section>
-						<pre><code data-trim contenteditable>
+						<pre><code data-trim class="bash" contenteditable>
 							git init mappe
 						</code></pre>
 					</section>
 				</section>
 
+
+
+<!-- git stages -->
+
+			<section>
+				<h3>Gits tre stadier </h3>
+				
+				<section>
+				    <p>
+				    	<b>1. Untracked:</b> 
+				    <br>
+				    <small>filen eksisterer men er ikke en del av gits versjonskontroll.</small> </p>
+
+				    <p><b>2. Staged:</b> 
+				    	<br>
+				    <small>filen er lagt til git's versjonskontroll, men forandringene er ikke commited</small></p>
+
+				    <p><b>3. Committed:</b> 
+				    	<br>
+				    <small>Forandringene er commited - vi har nå en ny versjon</small> </p>
+				</section>
+
+
+			</section>
+
+<!-- første stadie -->
+			<section>
+					<h4>Første stadie: Untracked</h4>
+				<section>
+					<img src="img/gifs/status.gif">
+				</section>
+
+
+				<section>
+					<img src="img/untracked.png">
+				</section>
+			</section>
+
+<!-- andre stadie -->
+			<section>
+					<h4>Andre stadie: Staged</h4>
+					<pre><code data-trim class="bash" contenteditable>
+							git add index.html
+						</code></pre>
+				
+				<section>
+
+					<img src="img/gifs/add.gif"></section>
+				<section><img src="img/add.png"></section>
+
+				<section>
+						<pre><code data-trim class="bash" contenteditable>
+							git add img #legger til alle filer i en mappe
+						</code></pre>
+					<img src="img/gifs/add2.gif">
+				</section>
+				<section>
+					<pre><code data-trim class="bash" contenteditable>
+							git add img #legger til alle filer i en mappe
+						</code></pre>
+					<img src="img/add2.png">
+				</section>
+
+				<section>
+					<pre><code data-trim class="bash" contenteditable>
+							git add img #legger til alle filer i en mappe
+							git add . #legger til alt i den mappen man er i.
+						</code></pre>
+					<img src="img/gifs/add3.gif"></section>
+				<section>
+					<pre><code data-trim class="bash" contenteditable>
+							git add img #legger til alle filer i en mappe
+							git add . #legger til alt i den mappen man er i.
+						</code></pre>
+					<img src="img/add3.png"></section>
+			</section>
+
+<!-- tredje stadie -->
+				<section>
+					<h4>Tredje stadie: Commited</h4>
+					<pre><code data-trim class="bash" contenteditable>
+							git commit
+						</code></pre>
+					
+					<section></section>
+					<section><img src="img/gifs/commit.gif"></section>
+
+					<section>
+						<pre><code data-trim class="bash" contenteditable>
+							git commit -m "beskjed her"
+						</code></pre>
+
+					</section>
+
+					
+<!-- oppsummer tre stadier -->
+
+				</section>
+<section><img src="img/stadier.png"></section>
+
+
+<!-- log -->
+	<section>
+		<h4>Ny versjon laget</h4>
+		
+		<pre><code data-trim class="bash" contenteditable>
+							git log
+						</code></pre>
+
+		<section></section>
+		<section><img src="img/log.png"></section>
+	</section>
+
+
+<section><h2>Oppsummering</h2>
+
+	<pre><code data-trim class="bash" contenteditable>
+		
+		git init  # lag git-repo av mappen din
+
+		# 1. stadie - untracked
+		git status  # viser det
+
+		# 2. stadie - staged (to be commited)
+		git add fil1.txt # en spesifikk fil
+		git add . # alle filer i denne mappen
+
+		# 3. stadie - commiting to a new version.
+		git commit -m "beskjed her"	
+
+		git status # nothing to commit 
+		
+
+		git log
+	</code></pre>
+
+</section>
+
+<section>
+	<h2>tilbake til denne loggen</h2>
+	<section><img src="img/log.png"></section>
+</section>
+
+<!-- jump trhough time -->
+<section>
+	<h2>La oss reise i tid</h2>
+</section>
+
+<section>
+	
+	<section>
+		<h4>Morty, you need to come with me!</h4>
+
+		<img src="img/rick-and-morty-2.png">
+	</section>
+
+	<section>
+		<h4>Checkout</h4>
+		<img src="img/rick-and-morty-2.png">
+		<pre><code data-trim class="bash" contenteditable>
+							git checkout a2d7875f43fd4aaef4f1c35499ec5c4667a25c5c
+						</code></pre>
+	</section>
+
+	<section>
+		<img src="img/rick-and-morty-3.png">
+	</section>
+</section>
+
+<!-- checkout -->
+	
+
+
+
+
+
+
+
+
 <!-- git stash -->
 				<section>
 					<section>
-						<pre><code data-trim contenteditable>
+						<pre><code data-trim class="bash" contenteditable>
 							git stash 
 						</code></pre>
 					</section>
 
 					<section>
-						<pre><code data-trim contenteditable>
+						<pre><code data-trim class="bash" contenteditable>
 							git stash
 						</code></pre>
 						<img src="img/stash.png" />
@@ -117,7 +296,7 @@
 
 				<section>
 					<img src="img/back-to-the-future.png">
-					<pre><code data-trim contenteditable>
+					<pre><code data-trim class="bash" contenteditable>
 						git checkout master
 					</code></pre>
 				</section>
