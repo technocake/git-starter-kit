@@ -175,110 +175,108 @@
 			</section>
 
 <!-- tredje stadie -->
+			<section>
+				<h4>Tredje stadie: Commited</h4>
+				<pre><code data-trim class="bash" contenteditable>
+						git commit
+					</code></pre>
+				
+				<section></section>
+				<section><img src="img/gifs/commit.gif"></section>
+
 				<section>
-					<h4>Tredje stadie: Commited</h4>
 					<pre><code data-trim class="bash" contenteditable>
-							git commit
-						</code></pre>
-					
-					<section></section>
-					<section><img src="img/gifs/commit.gif"></section>
-
-					<section>
-						<pre><code data-trim class="bash" contenteditable>
-							git commit -m "beskjed her"
-						</code></pre>
-
-					</section>
-
-					
-<!-- oppsummer tre stadier -->
+						git commit -m "beskjed her"
+					</code></pre>
 
 				</section>
-<section><img src="img/stadier.png"></section>
+			</section>
 
 
 <!-- log -->
-	<section>
-		<h4>Ny versjon laget</h4>
-		
-		<pre><code data-trim class="bash" contenteditable>
-							git log
-						</code></pre>
+			<section>
+				<h4>Ny versjon laget</h4>
+				
+				<pre><code data-trim class="bash" contenteditable>
+									git log
+								</code></pre>
 
-		<section></section>
-		<section><img src="img/log.png"></section>
-	</section>
+				<section></section>
+				<section><img src="img/log.png"></section>
+			</section>
 
 
-<section><h2>Oppsummering</h2>
+<!-- oppsummer ting til nå -->
+			<section><img src="img/stadier.png"></section>
 
-	<pre><code data-trim class="bash" contenteditable>
-		
-		git init  # lag git-repo av mappen din
+			<section><h2>Oppsummering</h2>
 
-		# 1. stadie - untracked
-		git status  # viser det
+				<pre><code data-trim class="bash" contenteditable>
+					
+					git init  # lag git-repo av mappen din
 
-		# 2. stadie - staged (to be commited)
-		git add fil1.txt # en spesifikk fil
-		git add . # alle filer i denne mappen
+					# 1. stadie - untracked
+					git status  # viser det
 
-		# 3. stadie - commiting to a new version.
-		git commit -m "beskjed her"	
+					# 2. stadie - staged (to be commited)
+					git add fil1.txt # en spesifikk fil
+					git add . # alle filer i denne mappen
 
-		git status # nothing to commit 
-		
+					# 3. stadie - commiting to a new version.
+					git commit -m "beskjed her"	
 
-		git log
-	</code></pre>
+					git status # nothing to commit 
+					
 
-</section>
+					git log
+				</code></pre>
 
-<section>
-	<h2>tilbake til denne loggen</h2>
-	<section><img src="img/log.png"></section>
-</section>
+			</section>
 
-<!-- jump trhough time -->
-<section>
-	<h2>La oss reise i tid</h2>
-</section>
 
-<section>
+			<section>
+				<h2>tilbake til denne loggen</h2>
+				<section><img src="img/log.png"></section>
+			</section>
+
+<!-- jump through time -->
+			<section>
+				<h2>La oss reise i tid</h2>
+			</section>
+
+			<section>
 	
-	<section>
-		<h4>Morty, you need to come with me!</h4>
+				<section>
+					<h4>Morty, you need to come with me!</h4>
 
-		<img src="img/rick-and-morty-2.png">
-	</section>
+					<img src="img/rick-and-morty-2.png">
+				</section>
 
-	<section>
-		<h4>Checkout</h4>
-		<img src="img/rick-and-morty-2.png">
-		<pre><code data-trim class="bash" contenteditable>
-							git checkout a2d7875f43fd4aaef4f1c35499ec5c4667a25c5c
-						</code></pre>
+				<section>
+					<h4>Checkout</h4>
+					<img src="img/rick-and-morty-2.png">
+					<pre><code data-trim class="bash" contenteditable>
+										git checkout a2d7875f43fd4aaef4f1c35499ec5c4667a25c5c
+									</code></pre>
 
-	</section>
+				</section>
 
-	<section>
-		<img src="img/log.png">
-		<pre><code data-trim class="bash" contenteditable>
-							git checkout a2d7875f43fd4aaef4f1c35499ec5c4667a25c5c
-						</code></pre>
-	</section>
+				<section>
+					<img src="img/log.png">
+					<pre><code data-trim class="bash" contenteditable>
+										git checkout a2d7875f43fd4aaef4f1c35499ec5c4667a25c5c
+									</code></pre>
+				</section>
 
-	<section>
-		<img src="img/rick-and-morty-3.png">
-		<img src="img/jump-back.png">
-	</section>
-</section>
-
-<!-- checkout -->
+				<section>
+					<img src="img/rick-and-morty-3.png">
+					<img src="img/jump-back.png">
+				</section>
+			</section>
 
 
-<!-- jumping through time -->
+
+<!-- jumping through time again , back to the future -->
 				<section>
 					<h1 class="pulsate">
 						Let's go ...
@@ -294,7 +292,40 @@
 					</code></pre>
 				</section>
 
-				
+
+<!-- Les mer -->
+
+				<section>
+					<h2>Lær mer</h2>
+					<h3>Grunnleggende git</h3>
+					<ul>
+						<li>
+							<a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Branching &amp; Merging</a>
+						</li>
+						<li>
+							<a href="http://archaeogeek.github.io/foss4gukdontbeafraid/index.html">Git-Tutorial</a>
+						</li>
+
+						<li>
+							<a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">githubs cheat-sheet</a>
+						</li>
+					</ul>
+
+
+					<h3>Mer avansert git</h3>
+					<ul>
+						<li>
+							<a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">undoing stuff</a>
+						</li>
+
+						<li><a href="http://ndpsoftware.com/git-cheatsheet.html">cheat-sheet: Oversikt alle kommandoer</a></li>
+
+					</ul>
+					 
+
+				</section>
+
+<!-- -====================================================================- -->
 			</div>
 		</div>
 
