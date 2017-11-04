@@ -1,0 +1,15 @@
+/* -- animation git kit --*/
+
+@keyframes pulsate-keyframe {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);   
+    } 
+}
+
+
+.pulsate {
+    animation: pulsate-keyframe 3s ease-in-out infinite alternate;
+}
